@@ -9,7 +9,7 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-with open('OHRU.csv', 'r') as file:
+with open('OHUR.csv', 'r') as file:
     reader = csv.reader(file)
     for i, row in enumerate(reader):
         print(f"Row {i}: {row}")
@@ -20,7 +20,7 @@ with open('OHRU.csv', 'r') as file:
 dates = []
 rates = []
 
-with open('OHRU.csv', 'r') as file:
+with open('OHUR.csv', 'r') as file:
     next(file) 
     for line in file:
         date_str, rate_str = line.strip().split(',')
